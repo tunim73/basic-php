@@ -44,7 +44,7 @@ $contas = [$conta1, $conta2, $conta3];
 
 
 for($i = 0; $i<count($contas); $i++){
-    echo "conta: {$contas[$i]['nome']} ". PHP_EOL;
+    //echo "conta: {$contas[$i]['nome']} ". PHP_EOL;
     //A forma de eu pegar o valor
 }
 
@@ -106,8 +106,40 @@ function name (float $entrada) : float
 
 /*
  * Padrão chaves de funções na linha de baixa, de condicionais e laços em linha
- *
- *
- *
  * */
+
+
+/*
+Caso eu queira pegar o valor de uma chave num array, e coloca lá numa variável, por legibilidade ou utilidade mesmo, por padrão
+se não botar a chave(s) que você quer pegar do array, ele segue o padrão e colca a indexação normal
+
+use o comando list
+    list('nome' => $nomeTitular) = $conta1;
+ou
+*/
+
+['nome' => $nomeTitular, 'saldo' => $saldoTitular]= $conta1;
+//echo PHP_EOL . "titular: $nomeTitular com saldo: $saldoTitular";
+
+
+//Remove uma conta
+
+unset($contasComCpf[1234], $contasComCpf[91011]);
+
+foreach ($contasComCpf as $cpf => $conta){
+    echo "$cpf :  {$conta['nome']}" . PHP_EOL;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
