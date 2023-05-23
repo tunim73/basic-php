@@ -6,3 +6,7 @@ function soma (float $x, float $y):float {
     return $x+$y;
 }
 
+//Passagem por referência
+function paraMaiusculo (string &$x){
+    $x =  strtoupper($x);
+}

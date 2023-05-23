@@ -18,4 +18,9 @@ require_once 'funções.php';
 
 $result = soma(5,5);
 
-echo "result = $result";
+//echo "result = $result";
+$minusculo = 'xuxa';
+
+paraMaiusculo($minusculo);
+
+echo $minusculo;
