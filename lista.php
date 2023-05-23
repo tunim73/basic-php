@@ -42,18 +42,19 @@ $conta3  = [
 $contas = [$conta1, $conta2, $conta3];
 
 
-/*
+
 for($i = 0; $i<count($contas); $i++){
-    echo "conta: " . $contas[$i]['nome'] . PHP_EOL;
+    echo "conta: {$contas[$i]['nome']} ". PHP_EOL;
     //A forma de eu pegar o valor
 }
-*/
+
 /*
 foreach ($contas as $conta) {
     echo $conta['saldo'] . PHP_EOL;
 }
 */
 
+echo "------------------------------------------------------";
 $contasComCpf = [
     1234 => $conta1,
     5678 => $conta2,
