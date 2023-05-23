@@ -84,3 +84,29 @@ $listaDeNomes[1] = "Ino";
 foreach ($listaDeNomes as $number => $li ){
     echo $li .PHP_EOL;
 }
+
+/*
+ Função, aqui no php, a função pega cópia das informações de uma variável
+
+ Importante: Por mais que seja uma linguagem dinamicamente tipada, em funções, a apartir do php 7 eu acho,
+ posso tipar a entrada e o retorno de uma função
+*/
+$x = 10;
+
+echo name($x) .PHP_EOL;
+echo $x;
+
+//
+function name (float $entrada) : float
+{
+    $soma = 50 + $entrada;
+    return $soma;
+}
+
+/*
+ * Padrão chaves de funções na linha de baixa, de condicionais e laços em linha
+ *
+ *
+ *
+ * */
+
