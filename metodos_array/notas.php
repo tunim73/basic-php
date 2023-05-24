@@ -8,17 +8,16 @@ $notas = [
     'Maria' => 9,
 ];
 
-krsort($notas);
-var_dump($notas);
+krsort($notas); // ordenação das chaves invertidas
+//var_dump($notas);
 
-if (is_array($notas)) {
+if (is_array($notas)) { // verifica se é um array
     echo 'Sim, é um array' . PHP_EOL;
 }
-
-var_dump(array_is_list($notas));
+var_dump(array_is_list($notas)); // array segue o padrão ou não
 
 echo 'Ana fez a prova:' . PHP_EOL;
-var_dump(isset($notas['Ana']));
+var_dump(isset($notas['Ana'])); // verifica se tem esta chave
 
 echo 'Alguém tirou 10?' . PHP_EOL;
 var_dump(in_array(10, $notas, true));

@@ -15,14 +15,15 @@ $novosAlunos = [
     'Daiane',
 ];
 
-$alunos2022 = [...$alunos2021, 'Carlos Vinicius', ...$novosAlunos];
-array_push($alunos2022, 'Alice', 'Bob', 'Charlie');
-$alunos2022[] = 'Luiz';
+$alunos2022 = [...$alunos2021, 'Carlos Vinicius', ...$novosAlunos]; //espalhamento dos elementos do array, para um novo array
 
-array_unshift($alunos2022, 'Stephane', 'Rafaela');
+array_push($alunos2022, 'Alice', 'Bob', 'Charlie'); //push
+$alunos2022[] = 'Luiz'; //push
 
-echo array_shift($alunos2022) . PHP_EOL;
+array_unshift($alunos2022, 'Stephane', 'Rafaela'); //push no início
 
-echo array_pop($alunos2022) . PHP_EOL;
+echo array_shift($alunos2022) . PHP_EOL; // remover no início
+
+echo array_pop($alunos2022) . PHP_EOL; // remover no fim
 
 var_dump($alunos2022);

@@ -13,3 +13,8 @@ foreach ($array as $numeral => $nomeNumero) {
 echo "Total: " . count($array) . PHP_EOL;
 
 var_dump(array_is_list($array));
+
+/*
+Esta função verifica se o array segue o padrão, retornando true, se não
+retorna false
+*/
