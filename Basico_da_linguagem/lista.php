@@ -94,7 +94,7 @@ foreach ($listaDeNomes as $number => $li ){
 */
 $x = 10;
 
-echo name($x) .PHP_EOL;
+echo lista . phpname($x) . PHP_EOL;
 echo $x;
 
 //
