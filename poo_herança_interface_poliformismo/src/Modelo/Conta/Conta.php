@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Banco\Modelo\Conta;
+namespace Alura\Banco\Modelo\Conta; // package == namespace
 
 abstract class Conta
 {

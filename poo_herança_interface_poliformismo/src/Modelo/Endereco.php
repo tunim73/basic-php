@@ -2,6 +2,8 @@
 
 namespace Alura\Banco\Modelo;
 
+
+// Essas anotações é para ajudar a ide a utilizar o __get que ta no traits;
 /**
  * Class Endereco
  * @package Alura\Banco\Modelo
@@ -10,9 +12,9 @@ namespace Alura\Banco\Modelo;
  * @property-read string $rua
  * @property-read string $numero
  */
-final class Endereco
+final class Endereco // "final" para impedir a herança por outras classes
 {
-    use AcessoPropriedades;
+    use AcessoPropriedades; // uso de traits
 
     private $cidade;
     private $bairro;

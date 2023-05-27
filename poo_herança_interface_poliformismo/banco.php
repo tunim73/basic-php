@@ -1,5 +1,19 @@
 <?php
 
+
+/*
+O "use" abaixo, não funciona sem o require, o use não importa a classe.
+Ao usar o namespace na classe, que é usado para diferenciar classes genéricas internas de externas,
+caso tenham o mesmo nome. Ele, de certa forma, renomeia a classe para o namespace que for colocado.
+
+E o "use" serve para pegar o nome correto da classe, para que, inclusive, não precise colocar essa
+nomecaltura toda ao usar o "new".
+
+O autoload serve para transformar o nome da classe, em "use", em um require _once. Isso só funciona,
+caso o nome da classe, seja o nome do arquivo que ela esteja, o que é o padrão.
+
+*/
+
 require_once 'autoload.php';
 
 use Alura\Banco\Modelo\Conta\Titular;

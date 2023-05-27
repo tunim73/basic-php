@@ -13,7 +13,7 @@ class Titular extends Pessoa implements Autenticavel
 
     public function __construct(CPF $cpf, string $nome, Endereco $endereco)
     {
-        parent::__construct($nome, $cpf);
+        parent::__construct($nome, $cpf); // super == parent
         $this->endereco = $endereco;
     }
 

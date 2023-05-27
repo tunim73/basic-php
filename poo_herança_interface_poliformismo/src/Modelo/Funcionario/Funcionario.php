@@ -11,7 +11,7 @@ abstract class Funcionario extends Pessoa
 
     public function __construct(string $nome, CPF $cpf, float $salario)
     {
-        parent::__construct($nome, $cpf);
+        parent::__construct($nome, $cpf); // super == parent
         $this->salario = $salario;
     }
 
